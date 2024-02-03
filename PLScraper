@@ -1,10 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 from reader import reader
 from tabulate import tabulate
 import time
-driver = webdriver.Chrome()
 
+options = Options()
+options.add_argument("--headless")
+driver = webdriver.Chrome(options=options)
 driver.get("https://stockanalysis.com/list/car-company-stocks/")
 driver.find_element(By.ID, "change").click()
 reader = reader()
