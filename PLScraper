@@ -1,14 +1,21 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time 
+from reader import reader
 from tabulate import tabulate
-driver = webdriver.Chrome();
+import time
+driver = webdriver.Chrome()
+
 driver.get("https://stockanalysis.com/list/car-company-stocks/")
 driver.find_element(By.ID, "change").click()
-time.sleep(2)
-rows = driver.find_element(By.ID, "main-table").text.split("\n")[3].split("\t")
-
-print(rows[0])
-element_count = 5
-
+reader = reader()
+reader.feed(driver.page_source)
+data = reader.getData()
+print(tabulate(data))
+processedData = []
+for row in data:
+    if len(row) > 0:
+        if row[1] == "CARZ" or row[5] == "-":
+            continue
+        processedData.append([row[1],row[5]])
+print(tabulate(processedData))
 time.sleep(5)
