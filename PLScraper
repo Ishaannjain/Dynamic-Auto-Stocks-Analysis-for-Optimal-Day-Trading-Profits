@@ -1,0 +1,14 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time 
+from tabulate import tabulate
+driver = webdriver.Chrome();
+driver.get("https://stockanalysis.com/list/car-company-stocks/")
+driver.find_element(By.ID, "change").click()
+time.sleep(2)
+rows = driver.find_element(By.ID, "main-table").text.split("\n")[3].split("\t")
+
+print(rows[0])
+element_count = 5
+
+time.sleep(5)
