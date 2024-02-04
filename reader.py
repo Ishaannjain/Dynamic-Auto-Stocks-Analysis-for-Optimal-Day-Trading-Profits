@@ -31,3 +31,8 @@ class reader(HTMLParser):
         return self.row
     def getData(self):
         return self.Table
+    def clear(self):
+        self.row.clear()
+        self.Table.clear()
+        self.hasData = False
+        self.relevance = False
