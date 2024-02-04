@@ -23,8 +23,8 @@ function closeSidebar() {
 const barChartOptions = {
   series: [
     {
-      data: [10, 8, 6, 4, 2],
-      name: 'Products',
+      data: [4.73, 8.1, 9.1, 18.9, 7.1],
+      name: 'Stock Values',
     },
   ],
   chart: {
@@ -81,7 +81,7 @@ const barChartOptions = {
     theme: 'dark',
   },
   xaxis: {
-    categories: ['company 1', 'company 2', 'company 3', 'company 4', 'company 5'],
+    categories: ['HYMTF', 'FSR', 'GELYF', 'SZKMY',  'STLA'],
     title: {
       style: {
         color: '#eb6734',
@@ -103,7 +103,7 @@ const barChartOptions = {
   },
   yaxis: {
     title: {
-      text: 'Count',
+      text: 'Stock Value',
       style: {
         color: '#f5f7ff',
       },
@@ -134,29 +134,28 @@ barChart.render();
 const areaChartOptions = {
   series: [
     {
-      name: 'Company 1',
-      data: [31, 40, 28, 51, 42, 109, 100],
-    },
-    {
-      name: 'company 2',
-      data: [11, 32, 45, 32, 34, 52, 41],
-    },
-
-    {
-      name: 'company 3',
-      data: [32, 52, 30, 32, 34, 52, 41],
-    },
-
-    {
-      name: 'company 4',
-      data: [32, 42, 30, 32, 24, 52, 41],
-    },
-
-    {
-      name: 'company 5',
-      data: [32, 42, 30, 32, 14, 52, 41],
-    },
-
+        name: 'HYMTF',
+        data: [47.03, 44.45, 42.55, 42.41, 42.5, 41.23, 41.225]
+      },
+      {
+        name: 'FSR',
+        data: [0.81, 0.7705, 0.8024, 0.8726, 0.9117, 0.8029, 0.7467]
+      },
+  
+      {
+        name: 'GELYF',
+        data: [0.96, 0.935, 0.95, 0.955, 0.982, 0.994, 1.0]
+      },
+  
+      {
+        name: 'SZKMY',
+        data: [189.6, 187.5, 178.87, 178.55, 175.85, 173.3, 173.6]
+      },
+  
+      {
+        name: 'STLA',
+        data: [23.08, 22.84, 21.96, 21.87, 21.26, 21.21, 21.15]
+      },
     
 
 
@@ -172,7 +171,7 @@ const areaChartOptions = {
     },
   },
   colors: ['#00ab57', '#d50000', '#eb6734', '#34d8eb', '#c034eb'  ],
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+  labels: ['1', '2', '3', '4', '5', '6', '7'],
   dataLabels: {
     enabled: false,
   },
@@ -233,7 +232,7 @@ const areaChartOptions = {
   yaxis: [
     {
       title: {
-        text: 'Purchase Orders',
+        text: 'Company value ',
         style: {
           color: '#f5f7ff',
         },
@@ -247,7 +246,7 @@ const areaChartOptions = {
     {
       opposite: true,
       title: {
-        text: 'Sales Orders',
+        text: 'Stock Value',
         style: {
           color: '#f5f7ff',
         },
