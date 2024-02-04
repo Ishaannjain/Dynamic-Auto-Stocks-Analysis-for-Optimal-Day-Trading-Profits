@@ -15,7 +15,7 @@ class Driver:
         options.add_argument("--ignore-certificate-errors")
         self.driver = webdriver.Firefox(options=options)
         
-    def getTop(self):
+    def getTop(self, count: int):
         self.driver.get("https://stockanalysis.com/list/car-company-stocks/")
         self.driver.find_element(By.ID, "change").click()
         r = reader()
@@ -27,23 +27,25 @@ class Driver:
                 if (row[1] == "Symbol " or row[1] == "CARZ") or row[5] == "-":
                     continue
                 processedData.append([row[1],row[2],float(row[5][0:len(row[5])-1])])
+                count-=1
+            if count==0:
+                break
         r.clear()
         return processedData
 
-    def getHistoricData(self, symbol: str):
+    def getHistoricData(self, symbol: str, count: int):
         self.driver.get("https://www.nasdaq.com/market-activity/stocks/"+symbol.lower()+"/historical")
         r = reader()
         r.feed(self.driver.page_source)
         data = r.getData()
         processedData = []
-        count = 0
         for row in data:
             if len(row) > 0:
                 if row[0] == "Date":
                     continue
                 processedData.append([row[0], float(row[1][1:])])
-                count+=1
-            if count==7:
+                count-=1
+            if count==0:
                 break
         r.clear()
         return processedData
