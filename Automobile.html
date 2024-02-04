@@ -3,69 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Infiniti Analyical-Auto</title>
+    <link rel="icon" type="image/png" href="Stock arrow.png">
     <link rel="stylesheet" href="automobile.css">
 </head>
 <body>
-
-</style>
-<div class="sidebar">
-<div class="logo"></div>
-<br>
-<br>
-<li style="list-style-type:none; align-items: center;">
-    <img src="AI logo.jpeg" alt="companylogo" width="175" height="autosize">
-    <a href="Infinity Analytics.html"></a>
-</li>
-<br>
-<ul class="menu">
-    <li class="active">
-        <a href="#">
-            <i class="fas fa-tachometer-alt"></i>
-            <span>Home</span>
-        </a>
-    </li>
-    <li>
-        <a href="Automobile.html">
-            <i class="fas fa-user"></i>
-            <span>Automobile</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <i class="fas fa-chart-bar"></i>
-            <span>Finance</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <i class="fas fa-briefcase"></i>
-            <span>Tech</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <i class="fas fa-question circle"></i>
-            <span>Energy</span>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <i class="fas fa-star"></i>
-            <span>Fashion</span>
-        </a>
-    </li>
-    <li class="logout">
-        <a href="#">
-            <i class="fas fa-sign-out-alt"></i>
-            <span>Logout</span>
-        </a>
-    </li>
-</ul>
-</div>
-</style>
-
-  <div id="blackBar">
+    <div class="sidebar">
+        <div class="logo"></div>
+        <br>
+        <br>
+        <li style="list-style-type:none; align-items: center;">
+            <img src="AI logo.jpeg" alt="companylogo" width="175" height="autosize">
+            <a href="Infinity Analytics.html"></a>
+        </li>
+        <br>
+        <ul class="menu">
+            <li>
+                <a href="Infinity Analytics.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                    <span>Automobile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Finance</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Tech</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-question circle"></i>
+                    <span>Energy</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-star"></i>
+                    <span>Fashion</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+        </div>
+        
+        <div class="main--content">
+            <div class="header--wrapper">
     <marquee behavior="scroll" 
 direction="left" 
 onmouseover="this.stop();" 
@@ -73,35 +72,33 @@ onmouseout="this.start();" class="scroll_btn">
 <div table>
     <table border="1">
         <tr>
-            <th>    Apple | APPL | 6.04 | 0.203  </th>
-            <th>   Google | GOGL | 4.56 | 0.102   </th>
-            <th>   Fisker | FISK | 6.32 | 0.923   </th>
-            <th>   Walmart | WALT | 5.24 | 0.456   </th>
-            <th>   Amazon | AMZN | 4.43 | 0.345   </th>
+            <td style="padding:0 15px 0 15px;">   | Apple | APPL | 6.04 | 0.204 |   </td>
+            <td style="padding:0 15px 0 15px;">   | Google | GOGL | 4.56 | 0.102 |  </td>
+            <td style="padding:0 15px 0 15px;">   | Fisker | FISK | 6.32 | 0.923 | </td>
+            <td style="padding:0 15px 0 15px;">   | Walmart | WALT | 5.24 | 0.456 | </td>
+            <td style="padding:0 15px 0 15px;">   | Amazon | AMZN | 4.43 | 0.345 | </td>
         </tr>
     </table>
 </div>
 </marquee>
-    <main>
-        <div class="charts">
-
-            <div class="charts-card">
-              <h2 class="chart-title">Top 5 Products</h2>
+<h1> Top 5 Stocks in Auto this week</h1>
+<div class="charts">
+    <div class="charts-card">
+              <h2 class="chart-title">Company Values</h2>
               <div id="bar-chart"></div>
-            </div>
+        </div>
   
-            <div class="charts-card">
-              <h2 class="chart-title">Purchase and Sales Orders</h2>
+        <div class="charts-card">
+              <h2 class="chart-title">Day by Day stock value this week</h2>
               <div id="area-chart"></div>
-            </div>
+        </div>
   
-          </div>
-    </main>
+</div>
     
     <!-- Scripts -->
     <!-- ApexCharts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
     <!-- Custom JS -->
-    <script src="automobile.js"></script>
+<script src="automobile.js"></script>
 </body>
 </html>
