@@ -4,13 +4,56 @@
         <meta charset="UTF-8"/>
         <title>Infiniti Analytical</title>
         <link rel="stylesheet" href="style.css"/>
-        <link
-        rel=""stylesheet"
+        <link rel="icon" type="image/png" href="Stock arrow.png"
+        rel="stylesheet"
         href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     </head>
     <body>
+        <style>
+            .mydiv1{
+                position: absolute;
+                border-radius:40px ;
+                width: 450px;
+                height: 500px;
+                background-color: white;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(bg2.jpg);
+                background-size: 200%;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                line-height: 10;
+                font-size: 300%;
+                color: white;
+                font-weight: bold;
+                
+            }
+            .mydiv2{
+                position: absolute;
+                border-radius:40px ;
+                width: 450px;
+                height: 500px;
+                background-color: #011520;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(bg2.jpg);
+                background-size: 200% ;
+                margin-left: 480px;
+                text-align: center;
+                color: white;
+                font-size: 120%;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .mydiv1, .mydiv2{
+                bottom: 8%;
+                left: 22.5%;
+            }   
+        </style>
         <div class="sidebar">
         <div class="logo"></div>
+        <br>
+        <br>
+        <li style="list-style-type:none; align-items: center;">
+            <img src="AI logo.jpeg" alt="companylogo" width="175" height="autosize">
+            <a href="Infinity Analytics.html"></a>
+        </li>
+        <br>
         <ul class="menu">
             <li class="active">
                 <a href="#">
@@ -59,10 +102,43 @@
         
         <div class="main--content">
             <div class="header--wrapper">
-                <div class="header--title">
-                    <h1>Home</h1>
-                </div>
-            </div>
-        </div>
-    </body>
+                div id="blackBar">
+    <marquee behavior="scroll" 
+direction="left" 
+onmouseover="this.stop();" 
+onmouseout="this.start();" class="scroll_btn">
+<div table>
+    <table border="1">
+        <tr>
+            <td style="padding:0 15px 0 15px;">   | Apple | APPL | 6.04 | 0.204 |   </td>
+            <td style="padding:0 15px 0 15px;">   | Google | GOGL | 4.56 | 0.102 |  </td>
+            <td style="padding:0 15px 0 15px;">   | Fisker | FISK | 6.32 | 0.923 | </td>
+            <td style="padding:0 15px 0 15px;">   | Walmart | WALT | 5.24 | 0.456 | </td>
+            <td style="padding:0 15px 0 15px;">   | Amazon | AMZN | 4.43 | 0.345 | </td>
+        </tr>
+    </table>
+</div>
+</marquee>
+<br>
+<br>
+<br>
+</div>
+</div>
+
+    <div class="mydiv1">
+        <p>
+            ABOUT
+        </p>
+    </div>
+    <div class="mydiv2" >
+        <p>
+            <br><br><br>
+            Welcome!
+This initiative project uses automobile stock market data to arm investors with a distinct advantage in identifying and seizing high-profit opportunities within a single trading day.
+<br><br>
+Our primary mission is to conduct a thorough analysis and organization of extensive datasets sourced from the automobile sector, with a special emphasis on profit and loss data. Through the application of advanced analytical techniques, we aim to unveil patterns, discernible trends, and crucial correlations that guide investors toward stocks within the automotive industry boasting the potential for substantial day trading profits.
+        </p>
+    </div>
+
+</body>
 </html>
