@@ -9,7 +9,6 @@ class reader(HTMLParser):
     def handle_starttag(self, tag, attrs):
         match tag:
             case "table":
-                print(attrs)
                 self.hasData = True
             case "tr":
                 self.row = list()
