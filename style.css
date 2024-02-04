@@ -1,4 +1,5 @@
 @import url("https://fonts.googleleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body{
     display: flex;
     background-color: black;
 }
+
 .sidebar{
     position: sticky;
     top: 0;
@@ -21,14 +23,12 @@ body{
     padding: 0 1.7rem;
     color:#fff;
     transition: all 0.5s linear;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.973),rgba(0, 0, 0, 0.648)),url(background.jpg);
+    background-size: 175%;
+    background-position: 55%;
 
 }
-.logo{
-    height: 80px;
-    padding: 16px;
 
-}
 .menu{
     height: 88%;
     position: relative;
@@ -47,7 +47,7 @@ body{
 }
 .menu a{
     color: #fff;
-    font-size: 14px;
+    font-size: 120%;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -92,4 +92,41 @@ body{
     color: white;
     font-family: "poppins";
     font-size: x-large;
+}
+
+#blackBar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:50px;
+    background-color:black;
+    }
+
+
+.scroll_btn {
+    font-size: 30px;
+    color: aqua;
+        font-family: amatic sc, cursive;
+        color: #000;
+        font-size: 30px;
+      
+        /* MAGIC HERE */
+        font-variant: small-caps;
+}
+table
+{
+    width: 10%;
+    color: white;
+    border: 3px solid white;
+    border-spacing: 1em 0;
+
+}
+.box{
+    width: 200px;
+    height: 100px;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    fill: white;
 }
