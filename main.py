@@ -1,15 +1,19 @@
 from DataRetrieval import Driver
-from tabulate import tabulate
-import json, time
+from pyweb import pydom
+import json
 driver = Driver()
 driver.setUp()
-a = time.perf_counter()
 topFive = driver.getTop(5)
 symbols = []
 dates = []
 jsonList = []
+count = 1
 for element in topFive:
     symbol = element[0]
+    pydom["td#N"+count].html = symbol
+    pydom["td#S"+count].html = element[1]
+    pydom["td#Pr"+count].html = element[3]
+    pydom["td#Pt"+count].html = element[4]
     symbols.append(symbol)
     value = driver.getHistoricData(symbol, 7)
     prices = []
@@ -18,7 +22,6 @@ for element in topFive:
             dates.append(one[0])
         prices.append(one[1])
     jsonList.append(dict(name = symbol, data=prices))
-    print(time.perf_counter()-a)
 with open("./assets/data/dates.json", "w") as outfile:
     outfile.write(json.dumps(dates))
 with open("./assets/data/topFive.json", "w") as outfile:

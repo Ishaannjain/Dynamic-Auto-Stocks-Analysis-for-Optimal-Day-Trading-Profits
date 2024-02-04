@@ -26,7 +26,7 @@ class Driver:
             if len(row) > 0:
                 if (row[1] == "Symbol " or row[1] == "CARZ") or row[5] == "-":
                     continue
-                processedData.append([row[1],row[2],float(row[5][0:len(row[5])-1])])
+                processedData.append([row[1], row[2], row[3], float(row[5][0:len(row[5])-1])])
                 count-=1
             if count==0:
                 break
