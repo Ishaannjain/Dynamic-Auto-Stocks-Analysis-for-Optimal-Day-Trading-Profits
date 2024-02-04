@@ -1,0 +1,132 @@
+@import url("https://fonts.googleleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    background-color: black;
+}
+
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color:#fff;
+    transition: all 0.5s linear;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.973),rgba(0, 0, 0, 0.648)),url(background.jpg);
+    background-size: 175%;
+    background-position: 55%;
+
+}
+
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover, 
+.active {
+    background: #e0e0e058;   
+}
+.menu a{
+    color: #fff;
+    font-size: 120%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.main--content{
+    position: relative;
+    background: bl;
+    width: 100%;
+    padding: 1rem;
+}
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.header--title{
+    color: white;
+    font-family: "poppins";
+    font-size: x-large;
+}
+
+#blackBar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:50px;
+    background-color:black;
+    }
+
+
+.scroll_btn {
+    font-size: 30px;
+    color: aqua;
+        font-family: amatic sc, cursive;
+        color: #000;
+        font-size: 30px;
+      
+        /* MAGIC HERE */
+        font-variant: small-caps;
+}
+table
+{
+    width: 10%;
+    color: white;
+    border: 3px solid white;
+    border-spacing: 1em 0;
+
+}
+.box{
+    width: 200px;
+    height: 100px;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    fill: white;
+}
